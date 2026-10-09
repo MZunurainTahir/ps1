@@ -1,15 +1,13 @@
-Here is a comprehensive `README.md` structured specifically for your **Software Construction (PS1 - Twitter Micro-System)** lab problem set:
 
-```markdown
 # PS1: Software Construction – Problem Set 1 (Twitter Micro-System)
 
-[![Language](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Java](https://img.shields.io/badge/Language-Java-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 📌 Overview
 This repository contains the implementation and unit test suite for **Problem Set 1 (PS1)** of the **Software Construction** course at **NUST SEECS**. 
 
-The goal of this assignment is to apply key software construction principles, including:
+The goal of this assignment is to apply key software construction principles:
 * **Abstract Data Types (ADTs)** and specification design.
 * **Test-Driven Development (TDD)** using JUnit.
 * **Object-oriented design patterns** and clean code practices.
@@ -41,17 +39,17 @@ ps1/
 
 ## 🛠️ Key Features & Modules
 
-### 1. **Filtering Module (`Filter.java`)**
+### 1. Filtering Module (`Filter.java`)
 
 * `writtenBy`: Filters tweets written by a specific user.
 * `containing`: Filters tweets containing specific search keywords (case-insensitive).
 
-### 2. **Social Network Metrics (`SocialNetwork.java`)**
+### 2. Social Network Metrics (`SocialNetwork.java`)
 
 * `guessFollowsGraph`: Infers a social graph (who follows whom) based on `@mentions` within tweets.
 * `influencers`: Ranks users based on their popularity/follower count derived from the inferred graph.
 
-### 3. **Immutability & Helper Types**
+### 3. Immutability & Helper Types
 
 * `Tweet.java` & `Timespan.java`: Immutable data models enforcing representation independence and preventing representation exposure through defensive copying.
 
@@ -96,7 +94,7 @@ java -cp bin twitter.Main
 
 To run the test suite and verify implementation correctness:
 
-* **Using An IDE:** Right-click the `test/twitter/` folder or `SocialNetworkTest.java` and select **Run as JUnit Test**.
+* **Using an IDE:** Right-click the `test/twitter/` folder or `SocialNetworkTest.java` and select **Run as JUnit Test**.
 * **Using Command Line:**
 ```bash
 javac -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar -d bin src/twitter/*.java test/twitter/*.java
